@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Exercício da apostila num: 71">
+    <meta name="author" content="Guilherme Gomes Branco">
+    <meta name="keywords" content="Exercicio, apostila, JavaScript"> 
+    <title>Exercício 71</title>
+</head>
+<body>
+    <h1>Exercício G</h1>
+    <p>Descrição:Efetuar a leitura de quatro números inteiros e apresentar os números que são divisíveis por 2 e 3.</p>
+    <script>
+        var lista_num = []; 
+        var lista_pares = [];
+        var lista_impares = [];
+        for (let i = 1; i <= 4; i++){
+            lista_num.push(parseInt(prompt("Digite um valor")));
+        }        
+        for (let i = 0; i < lista_num.length; i++){
+            if(lista_num[i] % 2 == 0){
+                lista_pares.push(lista_num[i]);
+            } else { 
+                lista_impares.push(lista_num[i]);
+            }
+        }
+        alert("Os números pares são: " + lista_pares);
+        alert("Os números impares são: " + lista_impares);
+    </script>
+</body>
+</html>

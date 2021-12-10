@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Exercício da apostila num: 68">
+    <meta name="author" content="Guilherme Gomes Branco">
+    <meta name="keywords" content="Exercicio, apostila, JavaScript"> 
+    <title>Exercício E</title>
+</head>
+<body>
+    <h1>Exercício 68</h1>
+    <p>Descrição: Efetuar a leitura de três valores (variáveis A, B e C) e efetuar o cálculo da equação completa de
+        segundo grau, apresentando as duas raízes, se para os valores informados for possível efetuar o
+        referido cálculo. Lembre-se de que a variável A deve ser diferente de zero.</p>
+    <script>
+        let a = parseInt(prompt("Digite um valor para a"));
+        let b = parseInt(prompt("Digite um valor para b"));
+        let c = parseInt(prompt("Digite um valor para c"));
+        // ax ** 2 + bx + c = 0 
+        if (a === 0){
+            alert("NÃO PODE SE CALCUALR COM O VALOR 0 NA LETRA A");
+        } else {
+        let delta = Math.pow(b, 2) - 4 * a * c; 
+        alert(delta);
+        if (delta < 0)
+        let x1 = (- b + Math.sqrt(delta))/ 2*a; 
+        let x2 = (- b - Math.sqrt(delta))/ 2*a;
+        alert("x1 = " + x1 + " \n" + "x2 = " + x2);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Exercício da apostila num: 91">
+    <meta name="author" content="Guilherme Gomes Branco">
+    <meta name="keywords" content="Exercicio, apostila, JavaScript">
+    <title>Exercício 91</title>
+</head>
+
+<body>
+    <h1>Exercício C</h1>
+    <p>Descrição: Apresentar todos os números divisíveis por 4 que sejam menores que 200. Para verificar se o 
+        número é divisível por 4, efetuar dentro da malha a verificação lógica desta condição com a 
+        instrução se, perguntando se o número é divisível; sendo, mostre-o; não sendo, passe para o 
+        próximo passo. A variável que controlará o contador deve ser iniciada com o valor 1. </p>
+    <script>
+        var texto = "";
+        var cont = 1;
+
+        do {
+            ;
+            if (cont % 4 == 0) {
+                texto += "<br>" + cont;
+            }
+            cont++;
+        } while (cont <= 200)
+
+        document.getElementById('saida').innerHTML = texto;
+    </script>
+</body>
+
+</html>

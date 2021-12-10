@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Exercício da apostila num: 73">
+    <meta name="author" content="Guilherme Gomes Branco">
+    <meta name="keywords" content="Exercicio, apostila, JavaScript">
+    <title>Exercício 73</title>
+</head>
+
+<body>
+    <h1>Exercício I</h1>
+    <p>Descrição: Elaborar um programa que efetue a leitura de um número inteiro e apresentar uma mensagem
+        informando se o número é par ou ímpar. </p>
+    <script>
+        function par_ou_impar(numero) {
+            if (numero % 2 == 0) {
+                var resultado = "par";
+            } else {
+                var resultado = "impar";
+            }
+            return resultado;
+        }
+        let numero = parseInt(prompt("digite um número"));
+        alert(`O valor ${numero} é ${par_ou_impar(numero)}`);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Exercício da apostila num: 68">
+    <meta name="author" content="Guilherme Gomes Branco">
+    <meta name="keywords" content="Exercicio, apostila, JavaScript">
+    <title>Exercício 68</title>
+</head>
+
+<body>
+    <h1>Exercício D</h1>
+    <p>Descrição: Ler quatro valores referentes a quatro notas escolares de um aluno e imprimir uma mensagem
+        dizendo que o aluno foi aprovado, se o valor da média escolar for maior ou igual a 7. Se o valor da
+        média for menor que 7, solicitar a nota de exame, somar com o valor da média e obter nova média.
+        Se a nova média for maior ou igual a 5, apresentar uma mensagem dizendo que o aluno foi
+        aprovado em exame. Se o aluno não foi aprovado, indicar uma mensagem informando esta
+        condição. Apresentar com as mensagens o valor da média do aluno, para qualquer condição. </p>
+    <script>
+        let n1 = parseFloat(prompt("Digite a primeira nota"));
+        let n2 = parseFloat(prompt("Digite a segunda nota"));
+        let n3 = parseFloat(prompt("Digite a terceira nota"));
+        let n4 = parseFloat(prompt("Digite a quarta nota"));
+        let media = (n1 + n2 + n3 + n4) / 4;
+        if (media >= 7) {
+            alert("aprovado" + media.toFixed(2));
+        } else {
+            let n5 = parseFloat(prompt("Digite a nota do exame: "));
+            media = (media + n5) / 2;
+            if (media >= 5) {
+                alert("O aluno foi aprovado com a média " + media.toFixed(2));
+            } else {
+                alert("O aluno foi reprovado com a média " + media.toFixed(2));
+            }
+        }
+    </script>
+</body>
+
+</html>

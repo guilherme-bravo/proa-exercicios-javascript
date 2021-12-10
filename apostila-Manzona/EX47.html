@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Exercício da apostila num: 47">
+    <meta name="author" content="Guilherme Gomes Branco">
+    <meta name="keywords" content="Exercicio, apostila, JavaScript"> 
+    <title>Exercício </title>
+</head>
+<body>
+    <h1>Exercício 47</h1>
+    <p>Descrição: Em  uma  eleição  sindical  concorreram  ao  cargo  de  presidente  três  candidatos  (A,  B  e  C).  Durante  a 
+        apuração  dos  votos  foram  computados  votos  nulos  e  votos  em  branco,  além  dos  votos  válidos  para 
+        cada  candidato.  Deve  ser  criado  um  programa  de  computador  que  efetue  a  leitura  da  quantidade  de 
+        votos  válidos  para  cada  candidato,  além  de  efetuar    também  a  leitura  da  quantidade  de  votos  nulos  e 
+        votos em branco. Ao final o programa deve apresentar o número total de eleitores, considerando votos 
+        válidos, nulos e em branco; o percentual correspondente de votos válidos em relação à quantidade de 
+        eleitores;  o  percentual  correspondente  de  votos  válidos  do  candidato  A  em  relação  à  quantidade  de 
+        eleitores;  o  percentual  correspondente  de  votos  válidos  do  candidato  B  em  relação  à  quantidade  de 
+        eleitores;  o  percentual  correspondente  de  votos  válidos  do  candidato  C  em  relação  à  quantidade  de 
+        eleitores; o percentual correspondente de votos nulos em relação à quantidade de eleitores; e por último 
+        o percentual correspondente de votos em branco em relação à quantidade de eleitores.</p>
+    <script>
+        var tot_eleitores = parseInt(prompt("Digite a quantidade total de eleitores: "));
+        var votos_nulos = parseInt(prompt("Digite a quantidade total de votos nulos:"));
+        var votos_brancos = parseInt(prompt("Digite a quantidade de votos brancos"));
+        var tot_nulos = tot_eleitores * votos_nulos/100;
+        var tot_brancos = tot_eleitores * votos_brancos/100;
+        var tot_validos = (tot_brancos + tot_nulos) - 100;
+        var votos_A = parseInt(prompt("Digite a quantidade de pessoas que votaram no candidato A"));
+        var votos_B = parseInt(prompt("Digite a quantidade de pessoas que votaram no candidato B"));
+        var votos_C = parseInt(prompt("Digite a quantidade de pessoas que votaram no candidato C"));
+        if (Math.max(votos_A, votos_B, votos_C) === votos_A){
+            var vencedor = "O ganhador foi o candidato A";
+        } else if((Math.max(votos_A, votos_B, votos_C) === votos_B)){
+            var vencedor = "O ganhador foi o candidato B";
+
+        } else {
+            var vencedor = "O ganhador foi o candidato C";
+        }
+        alert(
+            "Porcentagem de votos nulos: " + tot_nulos +
+            "\nPorcentagem de votos brancos" + tot_brancos + 
+            "\nPorcentagem de votos válidos" + tot_validos + 
+            "\n" + vencedor
+        )
+    </script>
+</body>
+</html>

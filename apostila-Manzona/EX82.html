@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Exercício da apostila num: 82">
+    <meta name="author" content="Guilherme Gomes Branco">
+    <meta name="keywords" content="Exercicio, apostila, JavaScript"> 
+    <title>Exercício 82</title>
+</head>
+<body>
+    <h1>Exercício F</h1>
+    <p>Descrição: Elaborar um programa que apresente como resultado o valor de uma potência de uma base 
+        qualquer elevada a um expoente qualquer, ou seja, de BE
+        , em que B é o valor da base e E o valor 
+        do expoente. Observe que neste exercício não pode ser utilizado o operador de exponenciação do 
+        portuguol (^)</p>
+    <script>
+         var expoente = parseInt(prompt("Digite o expoente: "));
+        var num = parseFloat(prompt("Digite o número a ser elevado: "));
+        var contador;
+        var result = 1;
+
+        while (expoente > 0) {
+            result = result * num;
+            expoente -= 1;
+        }
+        alert(result);
+    </script>
+</body>
+</html>

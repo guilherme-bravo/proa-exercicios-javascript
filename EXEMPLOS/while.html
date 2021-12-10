@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        while (true) {
+            var n1 = parseInt(prompt("Digite o primeiro valor"));
+            var operacao = prompt("Digite o sinal da operação: +; -; *; /");
+            var n2 = parseInt(prompt("Digite o segundo valor:"));   
+            switch (operacao) {
+                case "+":
+                    alert("O resultado da soma é" + (n1 + n2));
+                    operacao = '';
+                    break;
+
+                case "-":
+                    alert("O resultado da subtração é" + (n1 - n2));
+                    operacao = '';
+                    break;
+
+                case "*":
+                    alert("O resultado da multiplicação é" + (n1 * n2));
+                    operacao = '';
+                    break;
+                case "/":
+                    alert("O resultado da divisão é" + (n1 / n2));
+                    operacao = '';
+                    break;
+                default: 
+                    alert("operação invalida!");
+                    break
+            }
+        }
+    </script>
+</body>
+
+</html>

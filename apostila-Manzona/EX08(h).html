@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Exercício da apostila num: 8">
+    <meta name="author" content="Guilherme Gomes Branco">
+    <meta name="keywords" content="Exercicio, apostila, JavaScript">
+    <title>Exercício 8</title>
+</head>
+
+<body>
+    <h1>Exercício H</h1>
+    <p>Descrição: Elaborar um programa que calcule e apresente o volume de uma caixa retangular, por meio da fórmula
+        VOLUME ← COMPRIMENTO * LARGURA * ALTURA.</p>
+    <script>
+        var comprimento = parseFloat(prompt("Digite o comprimento de uma caixa"));
+        var largura = parseFloat(prompt("Digite a largura de uma caixa"));
+        var altura = parseFloat(prompt("Digite a altura de uma caixa"));
+        var volume = comprimento * largura * altura; 
+        alert("O volume é de: " + volume.toFixed(3));
+    </script>
+</body>
+
+</html>

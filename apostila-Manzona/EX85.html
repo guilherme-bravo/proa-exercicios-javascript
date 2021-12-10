@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Exercício da apostila num: 85">
+    <meta name="author" content="Guilherme Gomes Branco">
+    <meta name="keywords" content="Exercicio, apostila, JavaScript"> 
+    <title>Exercício 85</title>
+</head>
+<body>
+    <h1>Exercício I</h1>
+    <p>Descrição: Elaborar um programa que efetue a leitura de 10 valores numéricos e apresente no final o total do 
+        somatório e a média aritmética dos valores lidos.</p>
+    <script>
+        const lista = [];
+        let resultado = 0;
+        // recebendo 10 valores
+        for (i = 0; i <= 9; i++){
+            lista.push(parseInt(prompt("Digite um número")));
+        }
+        // realizando a soma dos valores
+        for (i = 0; i < lista.length; i++){
+            resultado += lista[i];
+        }
+        alert(`O resultado foi de ${resultado}`);
+    </script>
+</body>
+</html>

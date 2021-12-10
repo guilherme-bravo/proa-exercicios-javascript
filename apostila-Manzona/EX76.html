@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Exercício da apostila num: 76">
+    <meta name="author" content="Guilherme Gomes Branco">
+    <meta name="keywords" content="Exercicio, apostila, JavaScript">
+    <title>Exercício 76</title>
+</head>
+
+<body>
+    <h1>Exercício L</h1>
+    <p>Elaborar um programa que efetue a leitura do nome e do sexo de uma pessoa, apresentando com
+        saída uma das seguintes mensagens: "Ilmo Sr.", se o sexo informado como masculino, ou a
+        mensagem "Ilma Sra.", para o sexo informado como feminino. Apresente também junto da
+        mensagem de saudação o nome previamente informado. </p>
+    <script>
+        let nome = prompt("Digite o seu nome");  
+        let sexo = prompt("Digite o seu sexo [M/F]");
+        if (sexo.toUpperCase() === "M"){
+            alert("Ilmo Sr " + nome);
+        } else {
+            alert("Ilma Sra " + nome);
+        }
+    </script>
+</body>
+
+</html>
